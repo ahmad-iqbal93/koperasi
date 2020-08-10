@@ -1,0 +1,29 @@
+.text1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.form-inline{
+    display: flex;
+    flex-direction: row;
+}
+
+ .form-inline .input-group{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+ .form-inline .input-group .form-control{
+    width: 23vw;
+}
+
+.breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: .35rem;
+}

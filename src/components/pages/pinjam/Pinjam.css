@@ -1,0 +1,13 @@
+#wrapper{
+    min-height: 100vh;
+}
+
+.breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: .35rem;
+}

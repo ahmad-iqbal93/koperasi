@@ -1,0 +1,28 @@
+.wit1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 310px;
+    float: right;
+    position: relative;
+}
+
+ .wit1 .wit2{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 3%;
+}
+
+ .wit1 .wit2 .wit3{
+    width: 23vw;
+}
+
+.breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: .35rem;
+}
