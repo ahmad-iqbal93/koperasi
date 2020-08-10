@@ -10,7 +10,7 @@ const Sidebar = () => {
                 <div className="sidebar-brand-icon">
                     <i className="fa fa-building" />
                 </div>
-                <div className="sidebar-brand-text mx-3">Raja Koperasi</div>
+                <div className="sidebar-brand-text mx-3">Koperasi Asada</div>
             </a>
 
             {/* Heading */}
