@@ -1,22 +1,7 @@
-.text1{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.conAngsuran{
+    min-height: 72vh;
 }
 
-.form-inline{
-    display: flex;
-    flex-direction: row;
-}
-
- .form-inline .input-group{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
- .form-inline .input-group .form-control{
-    width: 23vw;
-}
 
 .breadcrumb{
     display: flex;

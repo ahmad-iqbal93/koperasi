@@ -1,20 +1,5 @@
-.wit1{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 310px;
-    float: right;
-    position: relative;
-}
-
- .wit1 .wit2{
-    display: flex;
-    flex-wrap: nowrap;
-    margin-left: 3%;
-}
-
- .wit1 .wit2 .wit3{
-    width: 23vw;
+.conWithdraw{
+    min-height: 72vh;
 }
 
 .breadcrumb{

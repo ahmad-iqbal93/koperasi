@@ -1,3 +1,7 @@
+.conMudharabah{
+    min-height: 72vh;
+}
+
 .breadcrumb{
     display: flex;
     flex-wrap: wrap;

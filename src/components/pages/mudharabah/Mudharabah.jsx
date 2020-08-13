@@ -6,29 +6,26 @@ const Mudharabah = () => {
     return (
         <div id='wrapper'>
             <div id='content'>
-                <div className="container-fluid">
+                <div className="container-fluid conMudharabah">
                     <div className="d-sm-flex align-items-center justify-content-between mb-4">
                         {/* Page Heading */}
                         <h1 className="h3 mb-2 text-gray-800">Bagi Hasil Mudharabah</h1>
 
                         {/* breadcrumb */}
                         <ol className="breadcrumb mb-0 text-gray-800">
-                            <li className="breadcrumb-item"><Link to='/dashboard'>Dashboard</Link></li>
+                            <li className="breadcrumb-item"><Link to='#'>Transaksi</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">Mudharabah</li>
                         </ol>
                         {/* end breadcrumb */}
                     </div>
                     {/* DataTales Example */}
                     <div className="card shadow mb-4">
-                        <div className="card-header py-3">
-
-                        </div>
                         <div className="card-body">
-                            <div className="table-responsive  container-fluid mb-4">
+                            <div className="table-responsive container-fluid mb-4">
                                 <div id="dataTable_wrapper" className="dataTables_wrapper dt-bootstrap4">
                                     {/*nomor-head */}
                                     <div className="row">
-                                        <div className="col">
+                                        <div className="col-sm-6">
                                             <div className="dataTables_length" id="dataTable_length">
                                                 <label>Show entries
                                             <select name="dataTable_length" aria-controls="dataTable" className="custom-select custom-select-sm form-control form-control-sm">
@@ -40,7 +37,7 @@ const Mudharabah = () => {
                                                 </label>
                                             </div>
                                         </div>
-                                        <div className="col">
+                                        <div className="col-sm-6">
                                             <div id="dataTable_filter" className="dataTables_filter" style={{
                                                 position: 'relative'
                                             }}>
@@ -58,25 +55,64 @@ const Mudharabah = () => {
                                             <table className="table table-bordered" id="dataTable" width="100%" cellSpacing={0}>
                                                 <thead>
                                                     <tr>
-                                                        <th>Id</th>
-                                                        <th>Nik</th>
-                                                        <th>Nama</th>
-                                                        <th>No. Telp</th>
-                                                        <th>Simpanan Mudharabah</th>
-                                                        <th>Bagi Hasil</th>
+                                                        <th>Nomor Transaksi</th>
+                                                        <th>ID Member</th>
+                                                        <th>Jumlah Bagi Hasil</th>
+                                                        <th>Jenis Bagi Hasil</th>
+                                                        <th>Tanggal Transaksi</th>
                                                     </tr>
                                                 </thead>
 
                                                 <tbody>
                                                     <tr>
-                                                        <td>1203</td>
-                                                        <td>121212</td>
-                                                        <td>Edinburgh</td>
-                                                        <td>0838888571</td>
-                                                        <td>2.000.000</td>
-                                                        <td>20.000</td>
+                                                        <td>BH-000000001</td>
+                                                        <td>M-000001</td>
+                                                        <td>IDR 950.000,00</td>
+                                                        <td>Mudharabah</td>
+                                                        <td>2016-08-29 04:08:40</td>
                                                     </tr>
-
+                                                    <tr>
+                                                        <td>BH-000000001</td>
+                                                        <td>M-000001</td>
+                                                        <td>IDR 950.000,00</td>
+                                                        <td>Mudharabah</td>
+                                                        <td>2016-08-29 04:08:40</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BH-000000001</td>
+                                                        <td>M-000001</td>
+                                                        <td>IDR 950.000,00</td>
+                                                        <td>Mudharabah</td>
+                                                        <td>2016-08-29 04:08:40</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BH-000000001</td>
+                                                        <td>M-000001</td>
+                                                        <td>IDR 950.000,00</td>
+                                                        <td>Mudharabah</td>
+                                                        <td>2016-08-29 04:08:40</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BH-000000001</td>
+                                                        <td>M-000001</td>
+                                                        <td>IDR 950.000,00</td>
+                                                        <td>Mudharabah</td>
+                                                        <td>2016-08-29 04:08:40</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BH-000000001</td>
+                                                        <td>M-000001</td>
+                                                        <td>IDR 950.000,00</td>
+                                                        <td>Mudharabah</td>
+                                                        <td>2016-08-29 04:08:40</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>BH-000000001</td>
+                                                        <td>M-000001</td>
+                                                        <td>IDR 950.000,00</td>
+                                                        <td>Mudharabah</td>
+                                                        <td>2016-08-29 04:08:40</td>
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>

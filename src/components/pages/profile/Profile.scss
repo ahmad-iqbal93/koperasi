@@ -1,0 +1,39 @@
+.dividerProfile{
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: 0;
+    font-size: 10px;
+}
+
+.card2 {
+
+    .textCard2{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.card1 {
+    .boxProfile{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        img{
+            margin-top: 30px;
+            height: 50%;
+            width: 50%;
+            border-radius: 100%;
+        }
+    }
+}
+
+
+.topForm{
+    padding: 20px 2%;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+

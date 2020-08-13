@@ -1,0 +1,41 @@
+.topbar .dropdown .dropdown-menu {
+    height: 310px;
+    position: absolute;
+    right: 0;
+    width: 350px;
+
+    .user-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+        .img-profile{
+            border-radius: 100%;
+            width: 120px;
+            height: 120px;
+            background-color: red;
+        }
+    }
+
+    .user-name{
+        text-align: center;
+    }
+
+
+    .row { 
+        display: flex;
+        justify-content: space-between;
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0px;
+            padding: 20px 10px;
+            height: 30px;
+        }
+        .btn:hover{
+            background-color: #bebebe;
+        }
+    }
+    
+}
