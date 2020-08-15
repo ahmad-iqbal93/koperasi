@@ -15,12 +15,19 @@ import Simpan from './components/pages/simpan/Simpan';
 import Pinjam from './components/pages/pinjam/Pinjam';
 import Withdraw from './components/pages/withdraw/Withdraw';
 import Angsuran from './components/pages/angsuran/Angsuran';
+import Profile from './components/pages/profile/Profile';
+import Forgot from './components/pages/forgot/Forgot';
 
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path='/profile'>
+          <Dashboard>
+            <Profile />
+          </Dashboard>
+        </Route>
 
         <Route path='/angsuran'>
           <Dashboard>
@@ -52,6 +59,9 @@ function App() {
           <Dashboard>
             <Card />
           </Dashboard>
+        </Route>
+        <Route path='/forgot'>
+          <Forgot />
         </Route>
         <Route path='/register'>
           <Register />

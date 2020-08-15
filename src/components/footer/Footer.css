@@ -1,7 +1,10 @@
-.sticky-footer{
-    display: flex;
-    width: 100%;
-    position: sticky;
-    bottom: 0;
+.sticky-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
 }
-
+/*# sourceMappingURL=Footer.css.map */

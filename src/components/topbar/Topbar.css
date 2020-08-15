@@ -1,0 +1,59 @@
+.topbar .dropdown .dropdown-menu {
+  height: 310px;
+  position: absolute;
+  right: 0;
+  width: 350px;
+}
+
+.topbar .dropdown .dropdown-menu .user-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0;
+}
+
+.topbar .dropdown .dropdown-menu .user-header .img-profile {
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  background-color: red;
+}
+
+.topbar .dropdown .dropdown-menu .user-name {
+  text-align: center;
+}
+
+.topbar .dropdown .dropdown-menu .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar .dropdown .dropdown-menu .row .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px;
+  padding: 20px 10px;
+  height: 30px;
+}
+
+.topbar .dropdown .dropdown-menu .row .btn:hover {
+  background-color: #bebebe;
+}
+/*# sourceMappingURL=Topbar.css.map */
