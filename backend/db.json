@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "lian@gmail.com",
+      "password": "$2a$10$H0VpJ434pIhTxLFhjRwr9Or8qXjLImFjapWda3XcdV9vGIeDZXlYy",
+      "userName": "lian",
+      "password2": "123456",
+      "id": 1
+    },
+    {
+      "email": "amelia@gmail.com",
+      "password": "$2a$10$tiGUskInIy4mO9zN0KC.NuA74FXor206d2skPhZ8eP4kX4a.vt2xq",
+      "userName": "lian amelia sofyana",
+      "password2": "123456",
+      "id": 2
+    }
+  ]
+}
