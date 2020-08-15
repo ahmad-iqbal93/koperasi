@@ -1,9 +1,13 @@
-.cardDashboard {
+.cardContainter {
+  min-height: 72vh;
+}
+
+.cardContainter .cardDashboard {
   position: relative;
   cursor: pointer;
 }
 
-.cardDashboard .cardRow .cardImg {
+.cardContainter .cardDashboard .cardRow .cardImg {
   max-width: 100%;
   -webkit-transition: -webkit-transform 2s;
   transition: -webkit-transform 2s;
@@ -11,7 +15,7 @@
   transition: transform 2s, -webkit-transform 2s;
 }
 
-.cardDashboard .cardRow:hover .cardImg {
+.cardContainter .cardDashboard .cardRow:hover .cardImg {
   -webkit-transform: scale(2);
           transform: scale(2);
 }

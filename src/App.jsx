@@ -17,12 +17,31 @@ import Withdraw from './components/pages/withdraw/Withdraw';
 import Angsuran from './components/pages/angsuran/Angsuran';
 import Profile from './components/pages/profile/Profile';
 import Forgot from './components/pages/forgot/Forgot';
+import RegisterMember from './components/pagesadmin/registermember/RegisterMember';
+import DataUsers from './components/pagesadmin/datausers/DataUsers';
+import DataMembers from './components/pagesadmin/datamembers/DataMembers';
 
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path='/datamembers'>
+          <Dashboard>
+            <DataMembers />
+          </Dashboard>
+        </Route>
+        <Route path='/datausers'>
+          <Dashboard>
+            <DataUsers />
+          </Dashboard>
+        </Route>
+        <Route path='/register'>
+          <Dashboard>
+            <RegisterMember />
+          </Dashboard>
+        </Route>
+
         <Route path='/profile'>
           <Dashboard>
             <Profile />

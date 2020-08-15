@@ -1,19 +1,3 @@
-.dividerProfile {
-  height: auto;
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  font-size: 10px;
-}
-
-.card2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .card2 .textCard2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,32 +7,24 @@
           justify-content: flex-start;
 }
 
-.card1 {
+.card1 .boxProfile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
-.card1 .contentUser {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
-  height: 90%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 8px;
-}
-
-.card1 img {
+.card1 .boxProfile img {
   margin-top: 30px;
   height: 50%;
   width: 50%;
