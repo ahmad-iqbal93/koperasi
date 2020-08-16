@@ -6,17 +6,17 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-import Login from './components/pages/login/Login';
-import Register from './components/pages/register/Register';
-import Dashboard from './components/pages/dashboard/Dashboard';
-import Mudharabah from './components/pages/mudharabah/Mudharabah';
-import Card from './components/card/Card';
-import Simpan from './components/pages/simpan/Simpan';
-import Pinjam from './components/pages/pinjam/Pinjam';
-import Withdraw from './components/pages/withdraw/Withdraw';
-import Angsuran from './components/pages/angsuran/Angsuran';
-import Profile from './components/pages/profile/Profile';
-import Forgot from './components/pages/forgot/Forgot';
+import Login from './components/member/pages/login/Login';
+import Register from './components/member/pages/register/Register';
+import Dashboard from './components/member/pages/dashboard/Dashboard';
+import Mudharabah from './components/member/pages/mudharabah/Mudharabah';
+import Card from './components/member/card/Card';
+import Simpan from './components/member/pages/simpan/Simpan';
+import Pinjam from './components/member/pages/pinjam/Pinjam';
+import Withdraw from './components/member/pages/withdraw/Withdraw';
+import Angsuran from './components/member/pages/angsuran/Angsuran';
+import Profile from './components/member/pages/profile/Profile';
+import Forgot from './components/member/pages/forgot/Forgot';
 
 
 function App() {

@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Login.css'
 
 
 const login = () => {
+
+    // let [userInput, setUserInput] = useState({
+    //     userName: '',
+    //     email: '',
+    //     password: ''
+    // })
+
+
     return (
         <div className="container-fluid bg-gradient-dark" style={{
             height: '100vh'

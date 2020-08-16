@@ -1,0 +1,22 @@
+#sidebarToggle::after {
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 30px;
+}
+
+.sidebar {
+  -webkit-animation: slide-open 0.75s forwards;
+          animation: slide-open 0.75s forwards;
+}
+
+@-webkit-keyframes slide-open {
+  100% {
+    margin-left: 30px;
+  }
+}
+
+@keyframes slide-open {
+  100% {
+    margin-left: 30px;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */

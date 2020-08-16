@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
+
+    let [show, setShow] = useState(false)
+
     return (
         <ul className="navbar-nav bg-gradient-dark sidebar sidebar-dark
          accordion" id="accordionSidebar">

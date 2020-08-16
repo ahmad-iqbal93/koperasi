@@ -63,7 +63,7 @@ const Register = () => {
                                                     ...userInput,
                                                     userName: e.target.value
                                                 })
-                                                console.log(userInput);
+                                                // console.log(userInput);
                                             }} />
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@ const Register = () => {
                                                 ...userInput,
                                                 email: e.target.value
                                             })
-                                            console.log(userInput);
+                                            // console.log(userInput);
                                         }} />
                                     </div>
                                     <div className="form-group row">
@@ -83,7 +83,7 @@ const Register = () => {
                                                     ...userInput,
                                                     password: e.target.value
                                                 })
-                                                console.log(userInput);
+                                                // console.log(userInput);
 
                                             }} />
                                         </div>
@@ -93,7 +93,7 @@ const Register = () => {
                                                     ...userInput,
                                                     password2: e.target.value
                                                 })
-                                                console.log(userInput);
+                                                // console.log(userInput);
 
                                             }} />
                                         </div>
