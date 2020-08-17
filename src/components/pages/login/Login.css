@@ -1,5 +1,21 @@
 .loginImages {
-    background-image: url(https://images.pexels.com/photos/2177815/pexels-photo-2177815.jpeg?cs=srgb&dl=man-wearing-black-baseball-cap-standing-inside-ring-2177815.jpg&fm=jpg);
+    background-image: url(https://images.pexels.com/photos/257636/pexels-photo-257636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
     background-position: center;
+    height: 80vh;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+
+
+  .imageText{
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    /* border: 1px solid red; */
+    align-content: center;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.500);
   }

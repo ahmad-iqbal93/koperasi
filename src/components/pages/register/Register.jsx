@@ -11,7 +11,8 @@ const Register = () => {
             display: 'flex',
             padding: '33.5px 0',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            minHeight : '100vh',
         }}>
             <div className="card o-hidden border-0 shadow-lg my-5 col-lg-10">
                 <div className="card-body p-0">
@@ -45,7 +46,7 @@ const Register = () => {
                                     </div>
                                     <a href="login.html" className="btn btn-primary btn-user btn-block">
                                         Register Account
-                    </a>
+                                    </a>
 
 
                                 </form>
