@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const ModalLogout = ({ idLogout, ket1, ket2, button, to }) => {
+const ModalLogout = ({ idLogout, ket1, ket2, button, to, onclick }) => {
     return (
 
         <div className="modal fade" id={idLogout} tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -16,7 +16,8 @@ const ModalLogout = ({ idLogout, ket1, ket2, button, to }) => {
                     <div className="modal-body">{ket2}</div>
                     <div className="modal-footer">
                         <button className="btn btn-secondary" type="button" data-dismiss="modal">Batalkan</button>
-                        <button className="btn btn-primary" to={to}>{button}</button>
+                        <button className="btn btn-primary" to={to} onClick={onclick}
+                        >{button}</button>
                     </div>
                 </div>
             </div>

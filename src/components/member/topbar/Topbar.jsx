@@ -57,12 +57,31 @@ const Topbar = () => {
 
             </ul>
 
-            <ModalLogout idLogout="logoutModal"
-                ket1="Apakah anda yakin?"
-                ket2="Pilih tombol Keluar dibawah jika anda yakin ingin keluar."
-                button="Keluar"
-                to="#"
-            />
+
+
+            {/* modal logout */}
+            <div className="modal fade" id='logoutModal' tabIndex={-1} role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Apakah anda yakin?</h5>
+                            <button className="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div className="modal-body">Pilih tombol Keluar dibawah jika anda yakin ingin keluar.</div>
+                        <div className="modal-footer">
+                            <button className="btn btn-secondary" type="button" data-dismiss="modal">Batalkan</button>
+                            <button className="btn btn-primary" onClick={() => {
+                                sessionStorage.removeItem('isLogin')
+                                window.location.href = '/'
+                            }}
+                            >Keluar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </nav >
 
     )

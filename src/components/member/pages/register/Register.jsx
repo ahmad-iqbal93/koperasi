@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Register.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Register = () => {
 
@@ -11,6 +11,8 @@ const Register = () => {
         password: '',
         password2: '',
     })
+
+    let [disabled, setDisabled] = useState(false)
 
     let handleSubmit = (e) => {
         e.preventDefault()
@@ -25,23 +27,43 @@ const Register = () => {
                 userName: userInput.userName,
                 email: userInput.email,
                 password: userInput.password,
-                password2: userInput.password2
             })
         })
 
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                if (data.accessToken) {
+                    // apabila berhasil
+                    alert('Registrasi Berhasil..')
+                    // lempar ke page login
+                    window.location.href = "/"
+
+                } else {
+                    // jika tidak berhasil
+                    alert(data)
+                }
             })
     }
+
+    useEffect(() => {
+
+        // console.log('data di update');
+        if (userInput.password === userInput.password2 && userInput.password.length >= 6) {
+            setDisabled(false)
+        }
+        else {
+            setDisabled(true)
+        }
+    }, [userInput])
 
 
     return (
 
         <div className="container-fluid bg-gradient-dark" style={{
             width: '100vw !important',
+            height: '100vh',
             display: 'flex',
-            padding: '33.5px 0',
             justifyContent: 'center',
             alignItems: 'center'
         }}>
@@ -63,7 +85,7 @@ const Register = () => {
                                                     ...userInput,
                                                     userName: e.target.value
                                                 })
-                                                // console.log(userInput);
+                                                console.log(userInput);
                                             }} />
                                         </div>
                                     </div>
@@ -73,7 +95,7 @@ const Register = () => {
                                                 ...userInput,
                                                 email: e.target.value
                                             })
-                                            // console.log(userInput);
+                                            console.log(userInput);
                                         }} />
                                     </div>
                                     <div className="form-group row">
@@ -83,7 +105,7 @@ const Register = () => {
                                                     ...userInput,
                                                     password: e.target.value
                                                 })
-                                                // console.log(userInput);
+                                                console.log(userInput);
 
                                             }} />
                                         </div>
@@ -93,18 +115,18 @@ const Register = () => {
                                                     ...userInput,
                                                     password2: e.target.value
                                                 })
-                                                // console.log(userInput);
+                                                console.log(userInput);
 
                                             }} />
                                         </div>
                                     </div>
-                                    <button to='#' type='submit' className="btn btn-primary btn-user btn-block">
+                                    <button type='submit' className="btn btn-primary btn-user btn-block" disabled={disabled}>
                                         Register Account
                                     </button>
                                 </form>
                                 <hr />
                                 <div className="text-center">
-                                    <a className="small" href="forgot-password.html">Lupa Password?</a>
+                                    <Link as='a' className="small" to="/forgot">Lupa Password?</Link>
                                 </div>
                                 <div className="text-center">
                                     <Link className="small" to="/login">Sudah punya akun? Login!</Link>

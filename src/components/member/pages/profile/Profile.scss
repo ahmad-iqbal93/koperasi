@@ -1,11 +1,6 @@
-.card2 {
-    .textCard2{
-        display: flex;
-        justify-content: flex-start;
-    }
-}
-
 .card1 {
+    width: 100%;
+    height: auto;
     .boxProfile{
         display: flex;
         justify-content: center;
@@ -20,6 +15,19 @@
         }
     }
 }
+
+
+
+
+
+.card2 {
+    .textCard2{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
 
 
 .topForm{

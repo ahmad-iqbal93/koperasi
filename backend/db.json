@@ -13,6 +13,12 @@
       "userName": "lian amelia sofyana",
       "password2": "123456",
       "id": 2
+    },
+    {
+      "email": "lian_amelia@gmail.com",
+      "password": "$2a$10$6TJRIqxmJB2oC1iCa.o.zOD/Kai8/fvkghp/hiOFs9hQpF6ANFf6C",
+      "userName": "lian amelia sofyana",
+      "id": 3
     }
   ]
 }
