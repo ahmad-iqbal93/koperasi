@@ -32,26 +32,9 @@ const Sidebar = () => {
                     <i className="fa fa-user" />
                     <span>Profile</span></NavLink>
             </li>
-            {/* Nav Item - Register Member */}
-            <li className="nav-item">
-                <NavLink className="nav-link active" to="/register">
-                    <i className="fa fa-user" />
-                    <span>Register Member</span></NavLink>
-            </li>
 
-            {/* Nav Item - Users And Members */}
-            <li className="nav-item">
-                <NavLink className="nav-link active collapsed" to="#" data-toggle="collapse" data-target="#collapseUsers" aria-expanded="true" aria-controls="collapseUsers">
-                    <i className="fas fa-fw fa-users" />
-                    <span>Users And Members</span>
-                </NavLink>
-                <div id="collapseUsers" className="collapse" aria-labelledby="headingUsers" data-parent="#accordionSidebar">
-                    <div className="bg-white py-2 collapse-inner rounded">
-                        <NavLink className="collapse-item" to="/datausers">Data Users</NavLink>
-                        <NavLink className="collapse-item" to="/datamembers">Data Members</NavLink>
-                    </div>
-                </div>
-            </li>
+
+
 
             {/* Nav Item - Pages Collapse Menu */}
             <li className="nav-item">
@@ -70,22 +53,7 @@ const Sidebar = () => {
                 </div>
             </li>
 
-            {/* Nav Item - Report */}
-            <li className="nav-item">
-                <NavLink className="nav-link active collapsed" to="#" data-toggle="collapse" data-target="#collapseReport" aria-expanded="true" aria-controls="collapseReport">
-                    <i className="fas fa-fw fa-print" />
-                    <span>Report</span>
-                </NavLink>
-                <div id="collapseReport" className="collapse" aria-labelledby="headingReport" data-parent="#accordionSidebar">
-                    <div className="bg-white py-2 collapse-inner rounded">
-                        <NavLink className="collapse-item" to="/">Simpan</NavLink>
-                        <NavLink className="collapse-item" to="/">Pinjam</NavLink>
-                        <NavLink className="collapse-item" to="/">Withdraw</NavLink>
-                        <NavLink className="collapse-item" to="/">Angsuran</NavLink>
-                        <NavLink className="collapse-item" to="/">Bagi Hasil</NavLink>
-                    </div>
-                </div>
-            </li>
+
 
             {/* Divider */}
             <hr className="sidebar-divider d-none d-md-block" />

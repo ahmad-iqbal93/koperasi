@@ -41,7 +41,8 @@ const Topbar = () => {
                                 <div className="row">
                                     <div className="col-6">
                                         <Link className="btn">
-                                            <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400" />Settings</Link>
+                                            <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400" />Settings
+                                        </Link>
                                     </div>
 
                                     <div className="col-6">

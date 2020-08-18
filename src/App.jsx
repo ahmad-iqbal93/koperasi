@@ -20,6 +20,7 @@ import Forgot from './components/pages/forgot/Forgot';
 import RegisterMember from './components/pagesadmin/registermember/RegisterMember';
 import DataUsers from './components/pagesadmin/datausers/DataUsers';
 import DataMembers from './components/pagesadmin/datamembers/DataMembers';
+import DashboardAdmin from './components/pagesadmin/dashboardadmin/DashboardAdmin';
 
 
 function App() {
@@ -27,19 +28,19 @@ function App() {
     <Router>
       <Switch>
         <Route path='/datamembers'>
-          <Dashboard>
+          <DashboardAdmin>
             <DataMembers />
-          </Dashboard>
+          </DashboardAdmin>
         </Route>
         <Route path='/datausers'>
-          <Dashboard>
+          <DashboardAdmin>
             <DataUsers />
-          </Dashboard>
+          </DashboardAdmin>
         </Route>
-        <Route path='/register'>
-          <Dashboard>
+        <Route path='/registermember'>
+          <DashboardAdmin>
             <RegisterMember />
-          </Dashboard>
+          </DashboardAdmin>
         </Route>
 
         <Route path='/profile'>
@@ -47,32 +48,60 @@ function App() {
             <Profile />
           </Dashboard>
         </Route>
-
+        <Route path='/angsuranadmin'>
+          <DashboardAdmin>
+            <Angsuran />
+          </DashboardAdmin>
+        </Route>
         <Route path='/angsuran'>
           <Dashboard>
             <Angsuran />
           </Dashboard>
         </Route>
-
+        <Route path='/withdrawadmin'>
+          <DashboardAdmin>
+            <Withdraw />
+          </DashboardAdmin>
+        </Route>
         <Route path='/withdraw'>
           <Dashboard>
             <Withdraw />
           </Dashboard>
+        </Route>
+        <Route path='/pinjamadmin'>
+          <DashboardAdmin>
+            <Pinjam />
+          </DashboardAdmin>
         </Route>
         <Route path='/pinjam'>
           <Dashboard>
             <Pinjam />
           </Dashboard>
         </Route>
+        <Route path='/simpanadmin'>
+          <DashboardAdmin>
+            <Simpan />
+          </DashboardAdmin>
+        </Route>
         <Route path='/simpan'>
           <Dashboard>
             <Simpan />
           </Dashboard>
         </Route>
+        <Route path='/mudharabahadmin'>
+          <DashboardAdmin>
+            <Mudharabah />
+          </DashboardAdmin>
+        </Route>
         <Route path='/mudharabah'>
           <Dashboard>
             <Mudharabah />
           </Dashboard>
+        </Route>
+        <Route path='/dashboardadmin'>
+          <DashboardAdmin>
+            <Card />
+          </DashboardAdmin>
         </Route>
         <Route path='/dashboard'>
           <Dashboard>
