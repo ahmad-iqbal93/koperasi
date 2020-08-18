@@ -13,7 +13,7 @@ const RegisterMember = () => {
 
                         {/* breadcrumb */}
                         <ol className="breadcrumb mb-0 text-gray-800">
-                            <li className="breadcrumb-item"><Link to='/dashboard'>Dashboard</Link></li>
+                            <li className="breadcrumb-item"><Link to='/dashboardadmin'>Dashboard</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">Register Member</li>
                         </ol>
                         {/* end breadcrumb */}
@@ -125,6 +125,9 @@ const RegisterMember = () => {
                                         <div className="col-sm-10">
                                             <input type="number" className="form-control" placeholder="Masukan Nomer Telepon" />
                                         </div>
+                                    </div>
+                                    <div className="form-group row">
+                                        <button type="submit" className="btn btn-primary">Save</button>
                                     </div>
                                 </form>
 

@@ -1,19 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const DataMembers = () => {
+const MudharabahAdmin = () => {
     return (
         <div id="wrapper">
             <div id="content" style={{ minHeight: '73vh' }}>
                 <div className="container-fluid">
                     <div className="d-sm-flex align-items-center justify-content-between mb-4">
                         {/* Page Heading */}
-                        <h1 className="h3 mb-2 text-gray-800">Data Members</h1>
-
+                        <h1 className="h3 mb-2 text-gray-800">Pre <small>Bagi Hasil Mudharabah</small></h1>
                         {/* breadcrumb */}
                         <ol className="breadcrumb mb-0 text-gray-800">
                             <li className="breadcrumb-item"><Link to='/dashboardadmin'>Dashboard</Link></li>
-                            <li className="breadcrumb-item active" aria-current="page">Data Members</li>
+                            <li className="breadcrumb-item active" aria-current="page">Angsuran</li>
                         </ol>
                         {/* end breadcrumb */}
                     </div>
@@ -49,34 +48,17 @@ const DataMembers = () => {
                                             <table className="table table-bordered" id="dataTable" width="100%" cellSpacing={0}>
                                                 <thead>
                                                     <tr>
+                                                        <th>ID</th>
                                                         <th>NIK</th>
                                                         <th>Nama</th>
-                                                        <th>Tempat Tanggal Lahir</th>
-                                                        <th>Pekerjaan</th>
-                                                        <th>Email</th>
                                                         <th>No. Telp</th>
-                                                        <th>More</th>
+                                                        <th>Simpanan Mudharabah</th>
+                                                        <th>Bagi Hasil</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>3276101099007</td>
-                                                        <td>Joko Anwar Habibi</td>
-                                                        <td>Depok, 1-2-1998</td>
-                                                        <td>Pelni</td>
-                                                        <td>test@gmail.com</td>
-                                                        <td>089698769876</td>
-                                                        <td>
-                                                            <span className="material-icons">
-                                                                folder_open
-                                                            </span>
-                                                            <span className="material-icons" style={{ margin: '0px 5px' }}>
-                                                                history_edu
-                                                            </span>
-                                                            <span className="material-icons">
-                                                                delete
-                                                            </span>
-                                                        </td>
+                                                        <td>none</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -123,12 +105,13 @@ const DataMembers = () => {
                             </div>
                         </div>
                     </div>
-                    {/* end Content */}
+                    {/* End Content */}
                 </div>
+
             </div>
 
         </div>
     )
 }
 
-export default DataMembers
+export default MudharabahAdmin

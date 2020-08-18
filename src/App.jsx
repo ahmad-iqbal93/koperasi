@@ -21,12 +21,23 @@ import RegisterMember from './components/pagesadmin/registermember/RegisterMembe
 import DataUsers from './components/pagesadmin/datausers/DataUsers';
 import DataMembers from './components/pagesadmin/datamembers/DataMembers';
 import DashboardAdmin from './components/pagesadmin/dashboardadmin/DashboardAdmin';
+import SimpanAdmin from './components/pagesadmin/simpanadmin/SimpanAdmin';
+import PinjamAdmin from './components/pagesadmin/pinjamadmin/PinjamAdmin';
+import WithdrawAdmin from './components/pagesadmin/withdrawadmin/WithdrawAdmin';
+import AngsuranAdmin from './components/pagesadmin/angsuranadmin/AngsuranAdmin';
+import MudharabahAdmin from './components/pagesadmin/mudharabahadmin/MudharabahAdmin';
+import ReportSimpan from './components/pagesadmin/reportsimpan/ReportSimpan';
 
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path='/reportsimpan'>
+          <DashboardAdmin>
+            <ReportSimpan />
+          </DashboardAdmin>
+        </Route>
         <Route path='/datamembers'>
           <DashboardAdmin>
             <DataMembers />
@@ -50,7 +61,7 @@ function App() {
         </Route>
         <Route path='/angsuranadmin'>
           <DashboardAdmin>
-            <Angsuran />
+            <AngsuranAdmin />
           </DashboardAdmin>
         </Route>
         <Route path='/angsuran'>
@@ -60,7 +71,7 @@ function App() {
         </Route>
         <Route path='/withdrawadmin'>
           <DashboardAdmin>
-            <Withdraw />
+            <WithdrawAdmin />
           </DashboardAdmin>
         </Route>
         <Route path='/withdraw'>
@@ -70,7 +81,7 @@ function App() {
         </Route>
         <Route path='/pinjamadmin'>
           <DashboardAdmin>
-            <Pinjam />
+            <PinjamAdmin />
           </DashboardAdmin>
         </Route>
         <Route path='/pinjam'>
@@ -80,7 +91,7 @@ function App() {
         </Route>
         <Route path='/simpanadmin'>
           <DashboardAdmin>
-            <Simpan />
+            <SimpanAdmin />
           </DashboardAdmin>
         </Route>
         <Route path='/simpan'>
@@ -90,7 +101,7 @@ function App() {
         </Route>
         <Route path='/mudharabahadmin'>
           <DashboardAdmin>
-            <Mudharabah />
+            <MudharabahAdmin />
           </DashboardAdmin>
         </Route>
         <Route path='/mudharabah'>

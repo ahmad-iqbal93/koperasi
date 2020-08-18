@@ -51,7 +51,7 @@ const SidebarAdmin = () => {
             {/* Nav Item - Pages Collapse Menu */}
             <li className="nav-item">
                 <NavLink className="nav-link active collapsed" to="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i className="fas fa-fw fa-cog" />
+                    <i className="fas fa-fw fa-tasks" />
                     <span>Transaksi</span>
                 </NavLink>
                 <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -60,11 +60,21 @@ const SidebarAdmin = () => {
                         <NavLink className="collapse-item" to="/pinjamadmin">Pinjam</NavLink>
                         <NavLink className="collapse-item" to="/withdrawadmin">Withdraw</NavLink>
                         <NavLink className="collapse-item" to="/angsuranadmin">Angsuran</NavLink>
+                    </div>
+                </div>
+            </li>
+            {/* Nav Item - Bagi Hasil */}
+            <li className="nav-item">
+                <NavLink className="nav-link active collapsed" to="#" data-toggle="collapse" data-target="#collapseBagi" aria-expanded="true" aria-controls="collapseBagi">
+                    <i className="fas fa-fw fa-briefcase" />
+                    <span>Bagi Hasil</span>
+                </NavLink>
+                <div id="collapseBagi" className="collapse" aria-labelledby="headingBagi" data-parent="#accordionSidebar">
+                    <div className="bg-white py-2 collapse-inner rounded">
                         <NavLink className="collapse-item" to="/mudharabahadmin">Mudharabah</NavLink>
                     </div>
                 </div>
             </li>
-
             {/* Nav Item - Report */}
             <li className="nav-item">
                 <NavLink className="nav-link active collapsed" to="#" data-toggle="collapse" data-target="#collapseReport" aria-expanded="true" aria-controls="collapseReport">
@@ -73,7 +83,7 @@ const SidebarAdmin = () => {
                 </NavLink>
                 <div id="collapseReport" className="collapse" aria-labelledby="headingReport" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">
-                        <NavLink className="collapse-item" to="/">Simpan</NavLink>
+                        <NavLink className="collapse-item" to="/reportsimpan">Simpan</NavLink>
                         <NavLink className="collapse-item" to="/">Pinjam</NavLink>
                         <NavLink className="collapse-item" to="/">Withdraw</NavLink>
                         <NavLink className="collapse-item" to="/">Angsuran</NavLink>
