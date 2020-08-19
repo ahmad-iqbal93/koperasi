@@ -84,10 +84,10 @@ const SidebarAdmin = () => {
                 <div id="collapseReport" className="collapse" aria-labelledby="headingReport" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">
                         <NavLink className="collapse-item" to="/reportsimpan">Simpan</NavLink>
-                        <NavLink className="collapse-item" to="/">Pinjam</NavLink>
-                        <NavLink className="collapse-item" to="/">Withdraw</NavLink>
-                        <NavLink className="collapse-item" to="/">Angsuran</NavLink>
-                        <NavLink className="collapse-item" to="/">Bagi Hasil</NavLink>
+                        <NavLink className="collapse-item" to="/reportpinjam">Pinjam</NavLink>
+                        <NavLink className="collapse-item" to="/reportwithdraw">Withdraw</NavLink>
+                        <NavLink className="collapse-item" to="/reportangsuran">Angsuran</NavLink>
+                        <NavLink className="collapse-item" to="/reportbagihasilmudharabah">Bagi Hasil</NavLink>
                     </div>
                 </div>
             </li>
